@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        body{
+            background-color: #186F65;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .cont{
+            text-align: center;
+            padding:20px;
+            background-color: #B5CB99;
+            color:white;
+            margin: 20px;
+            border-radius: 20px;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 style="color: #FCE09B;"> tables(harish &hearts; reshma)</h1>
+    <div class="cont">
+        {% for i in range(1,11)%}
+            <h2 style="color: #B2533E; font-size: 30px;font-family: 'Roboto', sans-serif;">{{num|int}} x {{i}} = {{num | int *i}}</h2> <!-- type of {{var}} is string-->
+        {% endfor %}
+    </div>
+</body>
+</html>
